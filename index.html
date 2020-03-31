@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <script src="js/main.js" defer></script>
+    <title>Bonita - La mode pour femmes -  </title>
+</head>
+<body>
+    <div id="mapage">
+        <header>
+            <div class="d-lg-flex col-log-row fixed-top bgCouleurBody">
+                <!-- menu sidebar mobil -->
+                <nav class="navbar navbar-light bg-white maPolice flex-lg-row col-lg-5 justify-content-start order-lg-2">
+                    <div class="d-flex justify-content-around w-100">
+                        <button id="hamburguer" class="navbar-toggler border-0 col-4 d-lg-none menuHamburguer" type="button" data-toggle="collapse" data-target="#navbarTogglerMobil" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand col-4 col-lg-6 d-flex justify-content-center justify-content-lg-end m-0 p-0 " href="index.html"><img class= "img-fluid changeTailleLogo" src="images/logo/logo_pet.png" width="140px" height="50px"></a>
+                        <button class="navbar-toggler border-0 col-4 d-lg-none iconeRecherche" type="button" data-toggle="collapse" data-target="#navbarTogglerRecherche" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="collapse navbar-collapse bgCouleurFonce p-3 p-lg-0 mt-lg-0 d-flex flex-column d-lg-none mobileMenu" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-self-stretch">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle maListe" href="#" id="navbarDropdownMobilVetements" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Vêtements
+                                </a>
+                                <div class="dropdown-menu maListe" aria-labelledby="navbarDropdownMobilVetements">
+                                  <a class="dropdown-item maListe" href="#">Voir tout</a>
+                                  <a class="dropdown-item maListe" href="pages/tops.html">Tops</a>
+                                  <a class="dropdown-item maListe" href="#">Robes</a>
+                                  <a class="dropdown-item maListe" href=#>Pulls & Gilets</a>
+                                  <a class="dropdown-item maListe" href=#>Pantalons</a>
+                                  <a class="dropdown-item maListe" href=#>Jupes & Shorts</a>
+                                  <a class="dropdown-item maListe" href=#>Mantaux & Vestes</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle maListe" href="#" id="navbarDropdownMobilChaussures" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Chaussures
+                                </a>
+                                <div class="dropdown-menu maListe" aria-labelledby="navbarDropdownMobilChaussures">
+                                  <a class="dropdown-item maListe" href="#">Voir tout</a>
+                                  <a class="dropdown-item maListe" href="#">Sandals</a>
+                                  <a class="dropdown-item maListe" href="#">Sneakers</a>
+                                  <a class="dropdown-item maListe" href="#">Bottines</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle maListe" href="#" id="navbarDropdownMobilAccessoires" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Accessoires
+                                </a>
+                                <div class="dropdown-menu maListe" aria-labelledby="navbarDropdownMobilAccesoires">
+                                  <a class="dropdown-item maListe" href="#">Voir tout</a>
+                                  <a class="dropdown-item maListe" href="#">Sacs & Portefeuilles</a>
+                                  <a class="dropdown-item maListe" href="#">Bijoux</a>
+                                  <a class="dropdown-item maListe" href="#">Ceintures</a>
+                                  <a class="dropdown-item maListe" href="#">Foulards & Echarpes</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle maListe" href="#" id="navbarDropdownMobilMaquillage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Maquillage
+                                </a>
+                                <div class="dropdown-menu maListe" aria-labelledby="navbarDropdownMobilMaquillage">
+                                  <a class="dropdown-item maListe" href="#">Voir tout</a>
+                                  <a class="dropdown-item maListe" href="#">Yeux & Sourcils</a>
+                                  <a class="dropdown-item maListe" href="#">Lèvres</a>
+                                </div>
+                            </li>
+                        </ul>    
+                    </div>
+
+                    <div class="collapse navbar-collapse order-lg-3" id="navbarTogglerRecherche">
+                        <form class="form-inline flex-nowrap w-100 my-1 my-lg-0 d-lg-none">
+                            <input class="form-control flex-grow-1 mr-md-2" type="search" placeholder="Ex: Pantalons" aria-label="Search">
+                            <button class="btn btn-outline-success monBouton my-2 my-md-0" type="submit">Recherche</button>
+                        </form>                   
+                    </div>               
+
+                </nav>    
+                <!-- recherche en laptop et desktop -->
+                <div class="d-none d-lg-flex order-lg-3 flex-column justify-content-center align-items-end col-4 p-0">
+                    <form class="form-inline flex-wrap m-0 p-0 w-100">
+                        <input class="form-control flex-grow-1 mr-2" type="search" placeholder="Ex: Pantalons" aria-label="Search">
+                        <button class="btn btn-outline-success monBouton my-2 my-md-0" type="submit">Recherche</button>
+                    </form> 
+                </div>
+                <ul id="menuIcones" class="nav justify-content-around align-items-center bgCouleurClaire changeOnLg flex-nowrap order-lg-1 col-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="pages/login.html"><img class="icones" src="images/icones/contact.png" alt="contact"/></a></li>
+                    <li class="nav-item"><a class="nav-link" href="mail.html"><img class="icones" src="images/icones/mail.png" alt="contact"/></a></li>
+                    <li class="nav-item"><a class="nav-link" href="favorites.html"><img class="icones" src="images/icones/favorites.png" alt="contact"/></a></li>
+                    <li class="nav-item"><a class="nav-link" href="acheter.html"><img class="icones" src="images/icones/acheter.png" alt="contact"/></a></li>
+                </ul>                
+            </div>      
+        </header>           
+        <!-- Menu Lapto et desktop -->
+        <nav class="d-none d-lg-inline-block maPolice menudesktop">
+            <ul class="nav flex-column">
+                <li class="nav-item dropright mb-2">
+                    <a class="nav-link dropdown-toggle taillePolice" href="#" id="navbarDropdownMaquillage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class='rounded-circle imgRonde' src="images/menu/vetementsCarre.jpg" alt="Vêtements"/> Vêtements
+                    </a>
+                    <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownVetements">
+                        <a class="dropdown-item submenuItem" href="#">Voir tout</a>
+                        <a class="dropdown-item submenuItem" href="pages/tops.html">Tops</a>
+                        <a class="dropdown-item submenuItem" href="#">Robes</a>
+                        <a class="dropdown-item submenuItem" href=#>Pulls & Gilets</a>
+                        <a class="dropdown-item submenuItem" href=#>Pantalons</a>
+                        <a class="dropdown-item submenuItem" href=#>Jupes & Shorts</a>
+                        <a class="dropdown-item submenuItem" href=#>Mantaux & Vestes</a>
+                    </div>
+                </li>   
+                <li class="nav-item dropright mb-2">
+                    <a class="nav-link dropdown-toggle taillePolice" href="#" id="navbarDropdownChaussures" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class='rounded-circle imgRonde' src="images/menu/chaussuresCarre.jpg" alt="Chaussures"/> Chaussures
+                    </a>
+                    <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownChaussures">
+                        <a class="dropdown-item submenuItem" href="#">Voir tout</a>
+                        <a class="dropdown-item submenuItem" href="#">Sandals</a>
+                        <a class="dropdown-item submenuItem" href="#">Sneakers</a>
+                        <a class="dropdown-item submenuItem" href="#">Bottines</a>
+                    </div>
+                </li> 
+                <li class="nav-item dropright mb-2">
+                    <a class="nav-link dropdown-toggle taillePolice" href="#" id="navbarDropdownAccessoires" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class='rounded-circle imgRonde' src="images/menu/accessoiresCarre.jpg" alt="Accessoires"/> Accessoires
+                    </a>
+                    <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownAccessoires">
+                        <a class="dropdown-item submenuItem" href="#">Voir tout</a>
+                        <a class="dropdown-item submenuItem" href="#">Bijoux</a>
+                        <a class="dropdown-item submenuItem" href="#">Sacs & Portefeuilles</a>                            
+                        <a class="dropdown-item submenuItem" href="#">Ceintures</a>
+                        <a class="dropdown-item submenuItem" href="#">Foulards & Echarpes</a>
+                      </div>
+                </li> 
+                <li class="nav-item dropright mb-2">
+                    <a class="nav-link dropdown-toggle taillePolice" href="#" id="navbarDropdownMaquillage" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class='rounded-circle imgRonde' src="images/menu/maquillageCarre.jpg" alt="Maquillage"/> Maquillage
+                    </a>
+                    <div class="dropdown-menu submenu" aria-labelledby="navbarDropdownMaquillage">
+                        <a class="dropdown-item submenuItem" href="#">Voir tout</a>
+                        <a class="dropdown-item submenuItem" href="#">Yeux & Sourcils</a>
+                        <a class="dropdown-item submenuItem" href="#">Lèvres</a>
+                      </div>
+                </li> 
+            </ul>
+        </nav>
+       
+        <main class= "maPolice" role="main">
+            <a class="linkHover" href="pages/nouveautes.html"><h2 class="text-body text-center">Nouveautés</h2></a>
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="pages/nouveautes.html"><img class="imgCarrousel d-block w-100" src="images/nouveautes/nouveautes.png" alt="Nouveautés"/></a>
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>La bralette</h5>
+                            <p>La saison prochaine, la brassière ne se cache plus sous les tops, elle s'affiche aussi à la ville.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="pages/nouveautes.html"><img class="imgCarrousel d-block w-100" src="images/nouveautes/nouveautes2.png" alt="Nouveautés"/></a>  
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Les bijoux tendances</h5>
+                            <p>Les collier multirang</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="pages/nouveautes.html"><img class="imgCarrousel d-block w-100" src="images/nouveautes/nouveautes3.png" alt="Nouveautés"/></a>  
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Les sandales à talon </h5>
+                            <p> Les sandales seront à lacer</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            
+            <div class="container-fluid">
+                <ul class="nav d-flex flex-row flex-wrap mt-5">
+                    <li class="nav-item col-6 col-sm-3 d-lg-none"><a class="nav-link text-center" href="#navbarDropdownMobilVetements"><img class="rounded-circle imgRonde" src="images/menu/vetementsCarre.jpg" alt="Vêtements"/><p>Vêtements</p></a></li>   
+                    <li class="nav-item col-6 col-sm-3 d-lg-none"><a class="nav-link text-center" href="#chaussures"><img class="rounded-circle imgRonde" src="images/menu/chaussuresCarre.jpg" alt="Chaussures"/><p>Chaussures</p></a></li>
+                    <li class="nav-item col-6 col-sm-3 d-lg-none"><a class="nav-link text-center" href="#accessoires"><img class="rounded-circle imgRonde" src="images/menu/accessoiresCarre.jpg" alt="Accesoires"/><p>Accesoires</p></a></li> 
+                    <li class="nav-item col-6 col-sm-3 d-lg-none"><a class="nav-link text-center" href="#maquillage"><img class="rounded-circle imgRonde" src="images/menu/maquillageCarre.jpg" alt="Maquillage"/><p>Maquillage</p></a></li> 
+                </ul>
+            </div>
+
+            <a class="linkHover" href="acheter.html"><h2 class="text-body text-center mt-5">Achetez le look</h2><img class="img-fluid w-100" src="images/look/look.png" alt="Looks"/></a>
+           
+            <h2 class="text-body text-center mt-5">Tendances</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2lLhd78Ryls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+        <footer>
+            <section class="d-flex justify-content-between align-items-center bgCouleurClaire mt-4">
+                <ul class="nav flex-column align-bottom">
+                    <li class="nav-item"><a class="nav-link text-body linkHover" href="info_produit.html">Livraison/Retour</a></li>
+                    <li class="nav-item"><a class="nav-link text-body linkHover" href="info_payment.html">Payment</a></li>
+                    <li class="pl-3">©2020 tous les droits réservés</li>
+                </ul>                  
+                <ul class="nav flex-column flex-md-row">
+                    <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/melissa_garcia85/"><img class="menuIconesSociaux" src="images/icones/instagram.png" alt="contact"/></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/melissa.a.garcia"><img class="menuIconesSociaux" src="images/icones/facebook.png" alt="contact"/></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://twitter.com/meliche"><img class="menuIconesSociaux" src="images/icones/twitter.png" alt="contact"/></a></li>
+                </ul>
+            </section>    
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

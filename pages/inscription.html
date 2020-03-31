@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/style.css">    
+    <script src="../js/main.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonita - La mode pour femmes -  </title>
+</head>
+<body>
+    <header>
+        <a class="d-flex justify-content-center mb-3" href="../index.html"><img class="img-fluid m-2" src="../images/logo/logo_pet.png" alt="logo"  width="23%"/></a></li>
+    </header>  
+    <div class="container maPolice d-md-flex flex-md-column align-items-center">
+        <h2 class="text-center font-weight-bold">S'inscrire</h2>
+        <form>
+            <div class="form-group">
+                <label for="pseudo">Email address</label>
+                <input type="email" class="form-control bgCouleurClaire inputFormulaire" name="pseudo" id="pseudo" aria-describedby="emailHelp" required onblur="verifMail(this)">
+            
+                <span class="maTooltip">L'address email n'a pas le bon format</span>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="pass">Mot de passe</label>
+                <input type="password" class="form-control bgCouleurClaire inputFormulaire" name="passe" id="pass" required onblur="verifMotdePasse(this)">
+                <small id="passwordHelp" class="form-text text-muted">8 caractères minimun</small>
+
+                <span class="maTooltip">Le mot de passe ne doit pas faire moins de 8 caractères</span>
+                <br />
+            </div>
+            <div class="form-group">
+                <label for="passConfirm">Confirmer mot de passe</label>
+                <input type="password" class="form-control bgCouleurClaire inputFormulaire" name="passe" id="passConfirm" required onblur="verifMotDePasseEgal(this)">
+
+                <span class="maTooltip">Le mot de passe de confirmation doit être identique à celui d'origine</span>
+                <br />
+            </div>
+            <div class="form-group"></div>
+                <label for="pass">Prenom</label>
+                <input type="text" class="form-control bgCouleurClaire inputFormulaire" name="prenom" id="prenom" required onblur="verifPrenom(this)"/>
+
+                <span class="maTooltip">Un prénom ne peut pas faire moins de 2 caractères</span>
+                <br />
+            </form>      
+            <div class="d-flex flex-column align-items-center">
+                <button type="submit" class="btn btn-outline-success monBouton font-weight-bold my-1">S'inscrire</button>
+                <p class="text-body">Vous avez une compte?
+                    <a class="text-body font-weight-bold" href="login.html">Connectez-vous</a>
+                </p>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <section class="d-flex justify-content-between align-items-center bgCouleurClaire mt-4">
+            <ul class="nav flex-column align-bottom">
+                <li class="nav-item"><a class="nav-link text-body linkHover" href="info_produit.html">Livraison/Retour</a></li>
+                <li class="nav-item"><a class="nav-link text-body linkHover" href="info_payment.html">Payment</a></li>
+                <li class="pl-3">©2020 tous les droits réservés</li>
+            </ul>                  
+            <ul class="nav flex-column flex-md-row">
+                <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/melissa_garcia85/"><img class="menuIconesSociaux" src="../images/icones/instagram.png" alt="contact"/></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/melissa.a.garcia"><img class="menuIconesSociaux" src="../images/icones/facebook.png" alt="contact"/></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://twitter.com/meliche"><img class="menuIconesSociaux" src="../images/icones/twitter.png" alt="contact"/></a></li>
+            </ul>
+        </section>    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>   
+
+</body>
+</html> 

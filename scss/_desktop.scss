@@ -1,0 +1,55 @@
+@media only screen and (min-width: 1200px){
+    .changeOnLg{
+        background-color: $couleurBody !important;
+    }
+
+    .imgRonde{
+        width: 35% !important;
+        height: 35% !important;
+    } 
+
+    .changeTailleLogo{
+        width: 200px !important;
+        height: 100px !important;
+    }
+
+    .submenu{
+        border-color: $couleurClaire !important;
+        left: -50px !important;
+    }
+
+    .submenuItem{
+        font-size: 1.15em !important;        
+        &:hover{
+        color: $couleurFonce !important;
+        background-color: $couleurBody !important;
+        }
+    }
+    .menuIconesSociaux{
+        width: 40px;
+        height: 40px;
+    }
+    .taillePolice{
+        font-size: 1.15em !important;
+    }
+    main {
+        // margin-top: 120px;
+        margin-left: 320px;
+        margin-right: 10px;
+    }
+    .menudesktop {
+      position: fixed;
+      z-index: 1; 
+      margin-top: 90px;
+      top: 0;
+      left: 0;
+      background-color: $couleurBody;
+      overflow: visible;
+      padding-top: 20px;
+    //   height: 70%;
+      width: 300px;
+    }
+    .inputFormulaire{
+        width: 500px !important;
+    }
+}

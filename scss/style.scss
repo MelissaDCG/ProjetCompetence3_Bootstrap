@@ -1,0 +1,156 @@
+$couleurFonce: #c58882;
+
+$couleurFonceTransp: rgba(197, 136, 130,0.5);
+
+$couleurClaire: #f9dec9;
+
+$couleurBody: #ffffff;
+
+$couleurTexte: #000000;
+
+$couleurNote: #9C9583;
+
+@font-face { 
+    font-family: "Bellota-Regular";
+    src: url("police/Bellota-Regular.otf") format("OpenType");
+}
+
+body {
+    background-color: $couleurBody;
+    font-family: "Bellota-Regular",Arial, Verdana, sans-serif;    
+    color: $couleurTexte;
+    margin: 0;
+    padding: 0;
+    // min-height: 100vh;    
+} 
+.maPolice{
+    font-family: "Bellota-Regular",Arial, Verdana, sans-serif !important;
+}
+
+.bgCouleurClaire{
+    background-color: $couleurClaire !important;
+}
+.bgCouleurFonce{
+    background-color: $couleurFonce;
+    // opacity: 0.97;
+}
+.bgCouleurBody{
+    background-color: $couleurBody !important;
+}  
+.menuHamburguer, .iconeRecherche{
+    &:focus, &:active{
+       outline: none !important; 
+    }
+}
+
+.monBouton{
+    border-color: $couleurFonce !important;
+    color: $couleurFonce !important;
+    &:hover, &:focus{
+        background-color:$couleurFonce !important;
+        border: 0 !important;
+        color: $couleurBody !important;
+    }    
+}
+
+.mobileMenu {
+    transform: translateX(-100%);
+    position: fixed;
+    top: 130px;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    transition: all ease 0.25s;
+    &.open {
+      transform: translateX(0%);
+      width: 100%;
+      height: 100%;
+    }
+    .navbar-nav {
+      overflow-y: visible;
+    }
+}
+
+.maListe{
+    font-size: 1.5em;
+    background-color: $couleurFonce !important;
+    border: none !important;
+    color: $couleurTexte !important;
+  }
+  
+  .maListe:hover{
+    text-decoration: none !important;
+    color: $couleurClaire !important;
+}
+
+.nav-link {
+    color: $couleurTexte !important;
+}
+
+.icones{
+    width: 30px;
+    height: 30px;
+}
+
+.linkHover:hover{   
+    text-decoration: underline !important; 
+    color: $couleurTexte !important;
+}
+
+main{
+   margin-top: 120px;
+}
+
+.imageCarrousel{
+    height: 100px !important;
+}
+
+.imgRonde{
+    width: 80% !important;
+    height: 80% !important; 
+    border: 1px groove rgb(231, 228, 228) !important;
+}
+
+//Icones reseaux sociaux du Footer
+.menuIconesSociaux{
+    width: 25px;
+    height: 25px;
+}
+
+//Formulaire
+.inputFormulaire{
+    border-color: lightgrey !important;
+}
+	
+.incorrect {
+    border-color: rgba(191, 68, 68, 0.75) !important;
+}
+	
+.maTooltip {
+	display: none;
+	padding: 2px 4px;
+	border: 1px solid grey;
+	background-color: rgb(235, 86, 86);
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 2px;
+}
+
+// .produitCarousel{
+//     height: 80% !important;
+// }
+
+.imgProduit{
+    border: 1px groove rgb(231, 228, 228) !important;
+}
+
+.btn-secondary{
+    background-color: $couleurFonce !important;
+    &.hover,&.focus{
+        border-color: $couleurBody !important;
+    }    
+}
+  
+@import "./tablet";
+@import "./laptop";
+@import "./desktop";
